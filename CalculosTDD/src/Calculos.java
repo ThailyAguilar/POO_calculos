@@ -19,9 +19,10 @@ public class Calculos {
      *
      * @param num
      * @return valor absoluto
-     */
-    float absoluto(float num) {
-        throw new UnsupportedOperationException("En construcción.");
+     */ 
+        public float absolute(float num) {
+        float res = Math.abs(num);
+            return res;
     }
 
     /**
