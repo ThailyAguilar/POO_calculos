@@ -42,9 +42,16 @@ public class Calculos {
      * @param texto
      * @return cantidad de vocales
      */
-    int vocales(String texto) {
-        throw new UnsupportedOperationException("En construcción.");
+    public int contarVocales(String texto) {
+    int contador = 0;
+    String vocales = "aeiouAEIOU";
+    for (int i = 0; i < texto.length(); i++) {
+        if (vocales.indexOf(texto.charAt(i)) != -1) {
+            contador++;
+        }
     }
+    return contador;
+}
 
     /**
      * *
