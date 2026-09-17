@@ -9,9 +9,19 @@ public class Calculos {
      * @param y
      * @return sumatoria
      */
-    int sumarSerie(int x, int y) {
-        throw new UnsupportedOperationException("En construcción.");
+    public int sumarSerie(int x, int y) {
+    if (x > y) { // intercambiar orden
+        int temp = x;
+        x = y;
+        y = temp;
     }
+    // Recorrer y sumar
+    int suma = 0;
+    for (int i = x; i <= y; i++) {
+        suma = suma + i;
+    }
+    return suma;
+}
 
     /**
      * *
